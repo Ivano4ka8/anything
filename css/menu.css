@@ -1,0 +1,60 @@
+.body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.2;
+    color: black;
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+
+.btn {
+}
+.menu {
+    display: flex;
+    gap: 30px;
+}
+.menu-item {
+    position: relative;
+  outline: 2px solid tomato;
+}
+
+.menu-item:hover .menu-secondary{
+opacity: 1;
+transform: translateY(0);
+}
+.menu-link {
+    display: block;
+    color: black;
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+
+}
+.menu-secondary {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top:100%;
+    width: 100%;
+    right: 0;
+
+opacity: 0;
+transform: translateY(100%);
+transition: opacity 250ms linear, transform 250ms linear;
+
+}
+.menu-item {
+}
+
+.menu-secondary-link {
+    display: block;
+    color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    overflow: auto;
+}
+
